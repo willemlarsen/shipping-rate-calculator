@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text">
+    <link href="css/styles.css" rel="stylesheet" type="text">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title="Shire Shipping Cost Calculator">
+  </head>
+  <div class="container">
+    <h2>Shire Shipping Cost Calculator</h2>
+    <div class="row">
+    <div class="col-md-6">
+    <form id="shipping-rate-calculator">
+      <div class="form-group">
+        <p>Choose your package type:</p>
+        <label for="package-type">Type Letter, Large Envelope, Small Box, or Large Box:</label>
+          <input id="package-type" type="text">
+        <label for="package-weight">Enter the weight of your item in ounces:</label>
+          <input id="package-weight" type="text">
+      </div>
+      <button class="submit" type="submit">Submit</button>
+    </form>
+    </div>
+    <div id="result-column" class="col-md=6"><h2>Your cost is <span id="result"></span>.</h2>
+    </div>
+    </div>
+  </div>
+</html>

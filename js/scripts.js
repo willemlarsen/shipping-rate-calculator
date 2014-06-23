@@ -11,6 +11,10 @@ var Package = {
 var letter = Object.create(Package);
 letter.price = .25;
 
+var largeEnvelope = Object.create(Package); 
+largeEnvelope.price = .50;
+
+
 
 var shippingRateCalculator = function(type, weight) {
 	ounces = weight;

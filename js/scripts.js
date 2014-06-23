@@ -14,6 +14,11 @@ letter.price = .25;
 var largeEnvelope = Object.create(Package); 
 largeEnvelope.price = .50;
 
+var smallBox = Object.create(Package);
+smallBox.price = .75;
+
+var largeBox = Object.create(Package);
+largeBox.price = 1;
 
 
 var shippingRateCalculator = function(type, weight) {

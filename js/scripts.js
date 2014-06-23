@@ -1,7 +1,18 @@
 
-
-var shippingRateCalculator = function(weight) {
-	var cost = weight * .25;
-	cost = "$" + cost.toFixed(2).toString();
-	return cost
+var ounces = 0;
+var Package = {
+	calculateCost: function (ounces) {
+		var cost = this.price * ounces;
+		cost = "$" + cost.toFixed(2).toString();
+		return cost;
+	}
 }
+
+var letter = Object.create(Package);
+letter.price = .25;
+
+
+var shippingRateCalculator = function(type, weight) {
+	ounces = weight;
+	return type.calculateCost(ounces);
+};
